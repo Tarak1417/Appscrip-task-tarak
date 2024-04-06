@@ -1,0 +1,39 @@
+#title-main-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 26px 0px;
+    border-bottom: 1px solid rgb(240, 231, 231);
+    padding-bottom: 21px;
+}
+#title-main-section .title-head{
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #252020;
+    line-height: 72px;
+    font-family: 'Simplon Norm' , sans-serif;
+    margin-bottom: 18px;
+}
+
+#title-main-section .title-body{
+    width: 721px;
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #252020;
+    line-height: 40px;
+    font-family: 'Simplon Norm' , sans-serif;
+}
+
+/* mobile responsive */
+@media only screen and (max-width : 768px){
+    #title-main-section .title-head{
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    #title-main-section .title-body{
+        font-size: 16px;
+        line-height: 22px;
+        width: auto;
+    }
+}

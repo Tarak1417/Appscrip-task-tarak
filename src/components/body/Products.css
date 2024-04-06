@@ -1,0 +1,275 @@
+#filter-bar-top-section {
+    display: flex;
+    margin-left: 4%;
+    justify-content: space-between;
+    padding: 0.75% 1.5% 2% 2%;
+    align-items: center;
+    border-bottom: 1px solid rgb(240, 231, 231);
+}
+
+#filter-bar-top-section .recomended-head {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.recomended-section:hover .recomeded-filter-dropdown {
+    display: block;
+}
+
+.recomeded-filter-dropdown {
+    padding: 12px;
+    height: auto;
+    width: 235px;
+    background: #FFFFFF;
+    position: absolute;
+    display: none;
+    right: 6px;
+}
+
+.recomeded-filter-dropdown .recomended-dropdown-items {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-end;
+    opacity: 65%;
+}
+
+.recomeded-filter-dropdown div {
+    margin: 18px 2px;
+}
+
+.recomended-dropdown-items p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+}
+
+#filter-bar-top-section .total-products-count,
+.recomended-head {
+    font-size: 18px;
+    color: #252020;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+#products-main-section {
+    margin: 16px 4px;
+    display: flex;
+    padding: 2% 1.5% 2% 4%;
+    gap: 25px;
+}
+
+#products-main-section hr {
+    margin: 14px 0px;
+}
+
+#filter-section {
+    width: 25%;
+    /* 300px */
+    height: 864px;
+}
+
+#filter-section .filter-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+}
+
+#filter-section .filter-item img,
+#filter-bar-top-section img {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    object-fit: fill;
+}
+
+#filter-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: auto;
+    margin: 12px 0px;
+}
+
+#filter-section form input {
+    height: 18px;
+    width: 18px;
+    border: 0.8px solid #4D4D4D;
+}
+
+#filter-section form .filter-checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 11px
+}
+
+
+
+#filter-section form label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #252020
+}
+
+#filter-section .filter-show-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #BFC8CD;
+    line-height: 19.2px;
+    text-decoration: underline;
+}
+
+.filter-item .filter-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-title p {
+    text-transform: uppercase;
+    color: #252020;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+
+.filter-details p {
+    color: #252020;
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 400;
+    margin: 12px 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+#products-all-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#products-all-section .product-container {
+    width: 265px;
+    height: auto;
+}
+
+.product-container .product-image {
+    width: 100%;
+    height: 356px;
+    object-fit: fill;
+}
+
+.product-container .product-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: #252020;
+    margin: 9px 0px;
+
+}
+
+.product-container .product-price {
+    margin: 8px 0px;
+    color: rgb(4, 43, 4);
+    font-size: 18px;
+    font-family: monospace, sans-serif;
+}
+
+.product-container .account-creation-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0px;
+}
+
+.account-creation-info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: #888792;
+}
+
+.account-creation-info img {
+    height: 24px;
+    width: 24px;
+    object-fit: fill;
+}
+
+/* tablet responsive */
+@media only screen and (min-width : 478px) and (max-width : 1024px) {
+    #products-all-section {
+        width: 100%;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    #filter-section {
+        display: none;
+    }
+
+    #products-main-section {
+        padding: 2%;
+    }
+
+}
+
+/* mobile responsive */
+@media only screen and (max-width : 478px) {
+    #products-all-section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #filter-section {
+        display: none;
+    }
+
+    #products-all-section .product-container {
+        width: 168px;
+        height: auto;
+    }
+
+    .product-container .product-image {
+        width: 100%;
+        height: 356px;
+        object-fit: fill;
+    }
+
+    .product-container .product-image {
+        height: 224px;
+    }
+
+    #products-main-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 1.5% 2% 1%;
+        gap: 16px;
+    }
+
+    #filter-section {
+        width: 85% !important;
+        margin: 14px 12px;
+    }
+
+    .filter-details p {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+
+    .filter-title p {
+        font-size: 18px;
+    }
+
+    .product-container .product-name {
+        font-size: 16px;
+    }
+
+    .account-creation-info p {
+        font-size: 12px;
+    }
+}
