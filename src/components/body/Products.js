@@ -170,7 +170,7 @@ function Products() {
                                             <p className='product-name'>{title}</p>
                                             <p className='product-price'>{`$${price}`}</p>
                                             <div className='account-creation-info'>
-                                                <p><a href='#' style={{ textDecoration: 'underLine', color: '#888792' }}>Sign in</a>or Create an account to see pricing</p>
+                                                <p>Sign in or Create an account to see pricing</p>
                                                 <img src={heartLogo} alt='like-icon' />
                                             </div>
                                         </div>
